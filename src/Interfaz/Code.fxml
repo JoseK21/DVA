@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.Interface">
+<AnchorPane prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.ControllerCode">
    <children>
       <TextArea fx:id="textA_Code" layoutX="23.0" layoutY="47.0" prefHeight="393.0" prefWidth="554.0" promptText="Write or copy your code here." wrapText="true" />
       <Text fill="#2f1919" layoutX="23.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Code, Please." textAlignment="CENTER">
@@ -21,5 +21,6 @@
             <Image url="/Image/run.png" />
          </image>
       </ImageView>
+      <Button layoutX="299.0" layoutY="19.0" mnemonicParsing="false" onAction="#selectFile" prefHeight="25.0" prefWidth="122.0" text="Select File." />
    </children>
 </AnchorPane>
