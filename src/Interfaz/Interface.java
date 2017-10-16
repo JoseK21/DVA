@@ -79,6 +79,11 @@ public class Interface implements Initializable {
 	public void InsertCode(ActionEvent event){			
 		try{
 			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Code.fxml"));
+			textA_CodeFort.clear();
+			textA_Variables.clear();
+			textA_Complexity.clear();
+			
+			
 			Parent root1 = (Parent) fxmlLoader.load();
 			Stage stage = new Stage();			
 			stage.initModality(Modality.WINDOW_MODAL);
@@ -174,7 +179,7 @@ public class Interface implements Initializable {
 		}
 		
 	}
-	
+	//@FXML
 	public void sendCodetoInterfacez(File ft){
 		int n_Line = 0;
 		try {
@@ -188,10 +193,13 @@ public class Interface implements Initializable {
 				try {
 					line = inLine.readLine();					
 					if (line != null) {
-						n_Line++;
+						
 						System.out.println(line);
-						textA_CodeFort.appendText(line);
-						textA_CodeFort.appendText("\n");
+						textA_CodeFort.insertText(n_Line,line);
+						n_Line++;
+						
+						//textA_CodeFort.appendText(line);
+						//textA_CodeFort.appendText("\n");
 					}
 				}catch (Exception e) {
 					System.out.println("Error_Window sendCodetoInterfacez");
@@ -205,8 +213,8 @@ public class Interface implements Initializable {
 		
 	}
 	@Override
-	public void initialize(URL url, ResourceBundle rb){
-			
+	public void initialize(URL url, ResourceBundle rb) {
+		
 	}
 }
 

@@ -16,5 +16,10 @@
          </font>
       </Text>
       <Button fx:id="Button_Run" layoutX="482.0" layoutY="19.0" mnemonicParsing="false" onAction="#analyzeCode" prefHeight="25.0" prefWidth="95.0" text="Run" />
+      <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="486.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/Image/run.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
