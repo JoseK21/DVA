@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaz.Interface">
+   <children>
+      <TextArea fx:id="textA_Code" layoutX="23.0" layoutY="47.0" prefHeight="393.0" prefWidth="554.0" promptText="Write or copy your code here." wrapText="true" />
+      <Text fill="#2f1919" layoutX="23.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insert Code, Please." textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua" size="26.0" />
+         </font>
+      </Text>
+      <Button fx:id="Button_Run" layoutX="482.0" layoutY="19.0" mnemonicParsing="false" onAction="#analyzeCode" prefHeight="25.0" prefWidth="95.0" text="Run" />
+   </children>
+</AnchorPane>

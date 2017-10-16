@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="460.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea layoutX="23.0" layoutY="7.0" prefHeight="431.0" prefWidth="554.0" text="Plugin DVA (Plugin Debugging and Visual Analysis)&#10;&#10;This eclipse plugin provides debugging and visual analysis of algorithms using flowcharts and &#10;Java Plaftform Debugger Architecture (JPDA) to facilitate the learning of basic programming concepts &#10;and the understanding of the algorithmic complexity of programs.&#10;&#10;The tool takes as input the execution sequence of the source code of simple programs and displays an &#10;animation based on a flowchart.&#10;&#10;The system interface can be seen on the left side of the source code being evaluated, while in the &#10;center of the window is shown the flow diagram corresponding to the code being executed.&#10;As the debugging is done the program makes an animation of the instruction that is running, both in &#10;the source code and in the flowchart. If the program calls a method that has been defined externally, &#10;in another class of the same project or in the same class, it is enabled the option to choose if you &#10;want to do a step into or step over. If you choose to use a step into, another flow diagram is shown &#10;with the execution animation of each method instruction on the right side of the main flow diagram.&#10;&#10;The values ​​that the variables take during the execution of a program are displayed in a panel at the &#10;right end of the window, as well as the algorithmic complexity of the blocks that make up the &#10;program under study.&#10;&#10;&#10;&#10;&#10;" />
+   </children>
+</AnchorPane>
